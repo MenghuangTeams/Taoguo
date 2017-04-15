@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_weight="0.12" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dip"
+        android:paddingRight="40dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="13dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="20dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.75"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/username_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/login_activity_username_label"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_material_dark"
+                    android:drawableLeft="@drawable/zhanghao"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.75"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/password_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/login_activity_password_label"
+                    android:inputType="textPassword"
+                    android:padding="8dp"
+                    android:textColor="@color/primary_material_dark"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical">
+
+                    <CheckBox
+                        android:id="@+id/Remember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/Remember"  />
+
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:id="@+id/Forget"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/Forget"
+                        android:textColor="@color/colorRed" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:minHeight="0dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@color/taoguo"
+            android:minHeight="0dp"
+            android:onClick="handleLogin"
+            android:padding="4dp"
+            android:text="@string/login_activity_ok_button"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:minHeight="0dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <Button
+            android:id="@+id/register_button"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/login_activity_register_button"
+            android:onClick="handleSignUp"
+            android:clickable="true"
+            android:padding="4dp"
+            android:minHeight="0dp"
+            android:background="@color/taoguo"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

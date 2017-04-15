@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="menghuan.android.me.com.menghuan.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_deal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/tab_menu_deal"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/tab_menu_deal_text" />
+
+        <TextView
+            android:id="@+id/txt_more"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/tab_menu_more"
+            android:gravity="center"
+            android:text="分类"
+            android:textColor="@drawable/tab_menu_more_text" />
+
+        <TextView
+            android:id="@+id/txt_release"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/tab_menu_release"
+            android:gravity="center"
+            android:text="发布"
+            android:textColor="@drawable/tab_menu_release_text" />
+
+        <TextView
+            android:id="@+id/txt_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/tab_menu_shop"
+            android:gravity="center"
+            android:text="购物车"
+            android:textColor="@drawable/tab_menu_shop_text" />
+
+        <TextView
+            android:id="@+id/txt_resume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_menu_bg"
+            android:drawablePadding="0dp"
+            android:drawableTop="@drawable/tab_menu_resume"
+            android:gravity="center"
+            android:text="个人"
+            android:textColor="@drawable/tab_menu_resume_text" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/tab_menu"
+        android:background="@color/text_green" />
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_menu"
+        android:background="@color/transparent">
+    </FrameLayout>
+</RelativeLayout>
